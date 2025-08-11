@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercicio08</title>
+</head>
+<body>
+  <h1>Tipos e valores das variáveis</h1>
+  <pre id="saida"></pre>
+
+  <script>
+    const str = "Olá mundo";
+    const inteiro = 10;
+    const flutuante = 3.14;
+    const booleano = true;
+
+    const vars = { str, inteiro, flutuante, booleano };
+
+    let resultado = '';
+    for (const [nome, valor] of Object.entries(vars)) {
+      resultado += `${nome}: tipo = ${typeof valor}, valor = ${valor}\n`;
+    }
+
+    document.getElementById('saida').textContent = resultado;
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercicio_07</title>
+</head>
+<body>
+  <h3>Comparação: número 10 vs string "10"</h3>
+  <pre id="resultado"></pre>
+
+  <script>
+    const a = 10;     
+    const b = "10";   
+
+    const resultado = [];
+    resultado.push(`a == b: ${a == b}`);
+    resultado.push(`a === b: ${a === b}`);
+
+    document.getElementById("resultado").textContent = resultado.join('\n');
+  </script>
+</body>
+</html>
